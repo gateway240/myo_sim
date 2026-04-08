@@ -109,7 +109,6 @@
         <mesh file="../myo_sim/meshes/osl_femur_trans_r.stl" name="mesh_femur_trans_r"/>
         <mesh file="../myo_sim/meshes/osl_generic_socket.stl" name="prosthetic_socket_geom_1_generic_socket"/>
         <mesh file="../myo_sim/meshes/osl_proximal_adapter_v2.stl" name="osl_proximal_adapter_geom_1_osl_proximal_adapter_v2"/>
-        <mesh name="osl_knee_assembly_geom_1_osl_knee_v2" builtin="cone" params="32 0.1"/>
         <mesh file="../myo_sim/meshes/osl_ankle_v2.stl" name="osl_ankle_assembly_geom_1_osl_ankle_v2"/>
         <mesh file="../myo_sim/meshes/osl_custom_foot_v2.stl" name="osl_foot_assembly_geom_1_osl_custom_foot_v2"/>
     </asset>
