@@ -171,7 +171,7 @@
             <site name="AMisch_at_condyles_r_site_addmagIsch_r_side" pos="-0.0360341 -0.49032 -0.0446456"/>
             <body name="prosthetic_socket" pos="-0.0045 -0.285 0.017"> <!-- pos="-0.0045 -0.283 0.006" -->
             <inertial pos="0 0.101169 0" quat="0.707107 0.707107 0 0" mass="0.849991" diaginertia="0.0039776 0.0039776 0.0027545"/>
-            <joint axis="-0.124293 0.989762 0.0701648" name="socket_piston" pos="0 0 0" range="-0.035 0.035" type="slide" stiffness="20000" damping="10000"/>
+            <joint axis="-0.124293 0.989762 0.0701648" name="socket_piston" pos="0 0 0" range="-0.025 0.025" type="slide" stiffness="20000" damping="10000"/>
       			<joint axis="0 0 1" name="socket_rotation_1" pos="0 0 0" range="-0.122173 0.122173" stiffness="350" damping="175"/>
             <joint axis="1 0 0" name="socket_rotation_2" pos="0 0 0" range="-0.122173 0.122173" stiffness="350" damping="175"/>
             <joint axis="0 1 0" name="socket_rotation_3" pos="0 0 0" range="-0.122173 0.122173" stiffness="350" damping="175"/>
@@ -187,8 +187,8 @@
                     <geom name="osl_proximal_adapter_geom_1" type="mesh" rgba="0 0 0 1" mesh="osl_proximal_adapter_geom_1_osl_proximal_adapter_v2" condim="3" contype="1"/>
                     <body name="osl_knee_assembly">
                         <inertial pos="0.00381 -0.05901 0.00918" quat="0.659658 0.705162 0.180917 -0.186728" mass="2.2455" diaginertia="0.00930494 0.00919978 0.00355928"/>
-                        <joint name="osl_knee_angle_r" pos="0 0 0" axis="0 0 -1" range="0 2.0944"/>
-                        <geom name="osl_knee_assembly_geom_1" type="mesh" rgba="0.071 0.169 0.62 1" mesh="osl_knee_assembly_geom_1_osl_knee_v2" condim="3" contype="1"/>
+                        <joint name="osl_knee_piston_r" type="slide"  pos="0 0 0" axis="0 1 0"  range="-0.2 0.2" stiffness="1000" damping="100"/>
+                        <geom name="osl_knee_assembly_geom_1"  quat="0.707035 0.707179 0 0" type="cylinder" size="0.025 0.2" rgba="0.071 1 0.62 1" condim="3" contype="1"/>
                         <body name="osl_tibial_pylon" pos="0 -0.2315 0.006">
 							<inertial pos="0 0 0" mass="0.0629248" diaginertia="0.001 0.001 0.001"/>
 

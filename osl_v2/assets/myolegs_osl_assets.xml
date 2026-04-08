@@ -1,4 +1,4 @@
-<mujocoinclude model="OSL_MyoLegs_v0.0.1">
+<mujocoinclude model="OSL_MyoLegs_v0.0.2">
 <!-- =================================================
     Copyright 2024 Chun Kwang Tan, Elizabeth Wilson, Adan Yusseff Dominguez Ruiz, Vikash Kumar, Vittorio Caggiano, Huawei Wang
     Model   :: OSL MyoLeg (MuJoCoV2.0)
@@ -109,7 +109,7 @@
         <mesh file="../myo_sim/meshes/osl_femur_trans_r.stl" name="mesh_femur_trans_r"/>
         <mesh file="../myo_sim/meshes/osl_generic_socket.stl" name="prosthetic_socket_geom_1_generic_socket"/>
         <mesh file="../myo_sim/meshes/osl_proximal_adapter_v2.stl" name="osl_proximal_adapter_geom_1_osl_proximal_adapter_v2"/>
-        <mesh file="../myo_sim/meshes/osl_knee_v2.stl" name="osl_knee_assembly_geom_1_osl_knee_v2"/>
+        <mesh name="osl_knee_assembly_geom_1_osl_knee_v2" builtin="cone" params="32 0.1"/>
         <mesh file="../myo_sim/meshes/osl_ankle_v2.stl" name="osl_ankle_assembly_geom_1_osl_ankle_v2"/>
         <mesh file="../myo_sim/meshes/osl_custom_foot_v2.stl" name="osl_foot_assembly_geom_1_osl_custom_foot_v2"/>
     </asset>
@@ -505,7 +505,7 @@
         <general biasprm="0.754438 1.8 5322.59 1 0.340667 3.5 10 1.80773 1.4 0" class="muscle" gainprm="0.754438 1.8 5322.59 1 0.340667 3.5 10 1.80773 1.4 0" lengthrange="0.295592 0.476057" name="vaslat_l" tendon="vaslat_l_tendon"/>
         <general biasprm="1.14989 1.61299 2422.17 1 0.412194 3.49301 10 1.4918 1.4 0" class="muscle" gainprm="1.14989 1.61299 2422.17 1 0.412194 3.49301 10 1.4918 1.4 0" lengthrange="0.311214 0.356041" name="vasmed_l" tendon="vasmed_l_tendon"/>
 
-        <motor name="osl_knee_torque_actuator" gear="49.4" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_knee_angle_r"/>
+        <motor name="osl_knee_hydraulic_actuator" gear="128.4" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_knee_piston_r"/>
         <motor name="osl_ankle_torque_actuator" gear="58.4" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_ankle_angle_r"/>
     </actuator>
 </mujocoinclude>
