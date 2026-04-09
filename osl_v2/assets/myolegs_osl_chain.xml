@@ -187,7 +187,7 @@
                     <geom name="osl_proximal_adapter_geom_1" type="mesh" rgba="0 0 0 1" mesh="osl_proximal_adapter_geom_1_osl_proximal_adapter_v2" condim="3" contype="1"/>
                     <body name="osl_knee_assembly">
                         <inertial pos="0.00381 -0.05901 0.00918" quat="0.659658 0.705162 0.180917 -0.186728" mass="2.2455" diaginertia="0.00930494 0.00919978 0.00355928"/>
-                        <joint name="osl_knee_piston_r" type="slide"  pos="0 0 0" axis="0 1 0"  range="-0.2 0.2" stiffness="1000" damping="100"/>
+                        <joint name="osl_knee_piston_r" type="slide"  pos="0 0 0" axis="0 1 0"  range="-0.1 0.1" stiffness="5000" damping="500"/>
                         <geom name="osl_knee_assembly_geom_1"  quat="0.707035 0.707179 0 0" type="cylinder" size="0.025 0.2" rgba="0.071 1 0.62 1" condim="3" contype="1"/>
                         <body name="osl_tibial_pylon" pos="0 -0.2315 0.006">
 							<inertial pos="0 0 0" mass="0.0629248" diaginertia="0.001 0.001 0.001"/>
