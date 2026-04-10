@@ -504,7 +504,7 @@
         <general biasprm="0.754438 1.8 5322.59 1 0.340667 3.5 10 1.80773 1.4 0" class="muscle" gainprm="0.754438 1.8 5322.59 1 0.340667 3.5 10 1.80773 1.4 0" lengthrange="0.295592 0.476057" name="vaslat_l" tendon="vaslat_l_tendon"/>
         <general biasprm="1.14989 1.61299 2422.17 1 0.412194 3.49301 10 1.4918 1.4 0" class="muscle" gainprm="1.14989 1.61299 2422.17 1 0.412194 3.49301 10 1.4918 1.4 0" lengthrange="0.311214 0.356041" name="vasmed_l" tendon="vasmed_l_tendon"/>
 
-        <motor name="osl_knee_hydraulic_actuator" gear="88.4" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_knee_piston_r"/>
+        <motor name="osl_knee_hydraulic_actuator" gear="116.8" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_knee_piston_r"/>
         <motor name="osl_ankle_torque_actuator" gear="58.4" ctrllimited="true" ctrlrange="-2.88 2.88" joint="osl_ankle_angle_r"/>
     </actuator>
 </mujocoinclude>
