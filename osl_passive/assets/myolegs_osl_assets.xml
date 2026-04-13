@@ -62,10 +62,10 @@
 
         <!-- Foot collisions -->
         <pair geom1="l_foot_col1" geom2="osl_blade_assembly_geom_1" condim="1"/>
-        <!-- <pair geom1="l_foot_col1" geom2="osl_foot_assembly_geom_1" condim="1"/> -->
+        <pair geom1="l_foot_col1" geom2="osl_foot_assembly_geom_1" condim="1"/>
 
         <pair geom1="l_foot_col4" geom2="osl_blade_assembly_geom_1" condim="1"/>
-        <!-- <pair geom1="l_foot_col4" geom2="osl_foot_assembly_geom_1" condim="1"/> -->
+        <pair geom1="l_foot_col4" geom2="osl_foot_assembly_geom_1" condim="1"/>
 
         <!-- femur to osl tibia -->
         <pair geom1="l_femur1_col" geom2="osl_blade_assembly_geom_1" condim="1"/>
@@ -124,10 +124,10 @@
     </equality>
 
     <sensor>
-        <!-- <touch name="r_osl_foot" site="r_osl_foot_touch"/> -->
+        <touch name="r_osl_foot" site="r_osl_foot_touch"/>
         <touch name="l_foot" site="l_foot_touch"/>
         <touch name="l_toes" site="l_toes_touch"/>
-        <!-- <force name="r_osl_load" site="r_osl_load_force"/> -->
+        <force name="r_osl_load" site="r_osl_load_force"/>
         <force name="r_socket_load" site="r_socket_load_force"/>
     </sensor>
 
